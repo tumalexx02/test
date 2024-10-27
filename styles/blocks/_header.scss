@@ -1,0 +1,33 @@
+.header {
+  padding: 40px 0;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu-btn {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    &:hover {
+      background: rgba(0,0,0,.05);
+      border-radius: 4px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 20px 0;
+  }
+}

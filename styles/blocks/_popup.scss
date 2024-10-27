@@ -1,0 +1,23 @@
+.popup {
+  display: block;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #fff;
+  box-shadow: 5px 10px 20px var(--shadow-color);
+  border-radius: 10px;
+  line-height: 40px;
+  font-size: 10px 20px;
+  padding: 20px 40px;
+  min-width: 200px;
+  max-width: 320px;
+  z-index: 200;
+  border: 1px solid var(--main-color);
+  transition: transform 0.3s ease-in, opacity 0.3s ease;
+
+  &_hidden {
+    transform: translateX(350px);
+    opacity: 0;
+    pointer-events: none;
+  }
+}

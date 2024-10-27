@@ -1,0 +1,38 @@
+@use 'reset';
+@use 'grid';
+
+// BLOCKS
+@use 'blocks/header';
+@use 'blocks/hero';
+@use 'blocks/btn';
+@use 'blocks/heading';
+@use 'blocks/text';
+@use 'blocks/our-services';
+@use 'blocks/clients';
+@use 'blocks/footer';
+@use 'blocks/modal-window';
+@use 'blocks/popup';
+
+:root {
+  --text-color: #1F3F68;
+  --invert-text-color: #FFFFFF;
+  --main-color: #5A98D0;
+  --main-color-hovered: #4e8abf;
+  --second-color: #316099;
+  --shadow-color: rgba(90,152,208,0.2);
+}
+
+body {
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+  color: var(--text-color);
+  position: relative;
+}
+
+main {
+  position: relative;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}

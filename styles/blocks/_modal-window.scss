@@ -1,0 +1,159 @@
+.modal-window {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 0.3s ease;
+  &_hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    z-index: 1001;
+    background-color: #fff;
+    padding: 56px;
+    border-radius: 10px;
+    width: 540px;
+    h2 {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+  }
+  &__close-btn {
+    margin-left: auto;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 22px;
+  }
+  &__label-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    input,
+    textarea,
+    label,
+    span {
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 300;
+      font-family: 'Gilroy', sans-serif;
+    }
+    input,
+    textarea {
+      padding: 21px 42px;
+      border: 1px solid var(--main-color);
+      border-radius: 10px;
+    }
+    textarea {
+      resize: none;
+      height: 144px;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 0.2;
+    }
+    span {
+      color: red;
+    }
+  }
+  &__form-btn {
+    padding: 23px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-height: 890px) {
+  .modal-window {
+    &__form {
+      gap: 15px;
+    }
+    &__label-input {
+      input,
+      textarea,
+      label,
+      span {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      input,
+      textarea {
+        padding: 18px 32px;
+      }
+      textarea {
+        height: 100px;
+      }
+    }
+    &__form-btn {
+      padding: 23px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-height: 680px) {
+  .modal-window {
+    &__form {
+      padding: 48px;
+    }
+    &__label-input {
+      input,
+      textarea,
+      label,
+      span {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      input,
+      textarea {
+        padding: 16px 32px;
+      }
+      textarea {
+        height: 80px;
+      }
+    }
+    &__form-btn {
+      padding: 18px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .modal-window {
+    &__form {
+      justify-content: center;
+      height: 100vh;
+      border-radius: 0;
+    }
+    &__label-input {
+      input,
+      textarea {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  }
+}

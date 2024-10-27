@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="/styles/style.scss">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="/" class="header__logo__link">
+              <img src="/assets/logo.svg" alt="Logo">
+            </a>
+          </div>
+          <button class="header__menu-btn">
+            <img src="/assets/svgs/hamburger-icon.svg" alt="Hamburger Icon">
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="popup popup_hidden"></div>
+
+      <section class="hero">
+        <div class="short-container">
+          <h1 class="hero__heading">New Automation<br>Tool for Your Home</h1>
+          <span class="hero__subtitle text trans-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.</span>
+          <button class="btn hero__btn">See Our Project</button>
+        </div>
+        <img src="/assets/images/hero-img.png" alt="Hero image" class="hero__bg-image">
+      </section>
+
+      <section class="our-services">
+        <div class="short-container">
+          <div class="our-services__grid">
+            <h2 class="heading our-services__heading">What we do to help our client grow in digital era,</h2>
+            <div class="our-services__card">
+              <div class="our-services__card-img-contaner">
+                <img src="assets/images/service1.png" alt="Service 1" class="our-services__card-img our-services__card-img_center">
+              </div>
+              <h3>Bring Technology To Your Comfortable Home</h3>
+              <span class="text trans-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              <a href="#">Learn more <img src="/assets/svgs/right-arrow.svg" alt="Right Arrow"></a>
+            </div>
+            <div class="our-services__card">
+              <div class="our-services__card-img-contaner">
+                <img src="assets/images/service2.png" alt="Service 2" class="our-services__card-img">
+              </div>
+              <h3>Make Your Business To Be Better Famous In Internet</h3>
+              <span class="text trans-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              <a href="#">Learn more <img src="/assets/svgs/right-arrow.svg" alt="Right Arrow"></a>
+            </div>
+            <div class="our-services__card">
+              <div class="our-services__card-img-contaner">
+                <img src="assets/images/service3.png" alt="Service 3" class="our-services__card-img">
+              </div>
+              <h3>Build Your Digital Product That Suitable For Your Need</h3>
+              <span class="text trans-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              <a href="#">Learn more <img src="/assets/svgs/right-arrow.svg" alt="Right Arrow"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients invert-text">
+        <div class="short-container">
+          <div class="clients__top-wrapper">
+            <h2 class="heading clients__heading">Our Beloved<br>Client</h2>
+            <span class="text trans-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
+          </div>
+
+          <div class="clients__grid">
+            <div class="clients__grid-item">LOGO CLIENT 1</div>
+            <div class="clients__grid-item">LOGO CLIENT 2</div>
+            <div class="clients__grid-item">LOGO CLIENT 3</div>
+            <div class="clients__grid-item">LOGO CLIENT 4</div>
+            <div class="clients__grid-item">LOGO CLIENT 5</div>
+            <div class="clients__grid-item">LOGO CLIENT 6</div>
+            <div class="clients__grid-item">LOGO CLIENT 7</div>
+            <div class="clients__grid-item">More Clients</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer invert-text">
+      <div class="footer__dark-bg"></div>
+      <div class="short-container">
+        <div class="footer__top">
+          <div class="footer__top-text">
+            <h2 class="heading footer__heading">
+              Intersted to work<br>with our team?
+            </h2>
+            <span class="text trans-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
+          </div>
+          <button class="btn" id="show-modal-button">Let's Talk</button>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__columns-wrapper">
+            <div class="footer__info-column">
+              <div class="footer__logo">
+                <img src="/assets/logo-white.svg" alt="Logo white">
+                <span>Afrianska</span>
+              </div>
+              <ul class="footer__info-list">
+                <li class="text">
+                  <span>A.</span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </li>
+                <li class="text">
+                  <span>T.</span>
+                  +62-812-7313-4321
+                </li>
+                <li class="text">
+                  <span>E.</span>
+                  hello.afrian@gmail.com
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h5 class="footer__list-heading">About Us</h5>
+              <nav>
+                <ul class="footer__column-list">
+                  <li><a href="/" class="text">About</a></li>
+                  <li><a href="/" class="text">What We Do</a></li>
+                  <li><a href="/" class="text">Project</a></li>
+                  <li><a href="/" class="text">How It Work With Us</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <h5 class="footer__list-heading">Follow Us</h5>
+              <ul class="footer__column-list">
+                <li><a href="/" target="_blank" class="text">Instagram</a></li>
+                <li><a href="/" target="_blank" class="text">Facebook</a></li>
+                <li><a href="/" target="_blank" class="text">LinkedIn</a></li>
+                <li><a href="/" target="_blank" class="text">Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <span class="footer__rights text trans-text">2019 © Afrianska. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-window modal-window_hidden">
+      <div class="modal-window__overlay"></div>
+      <form class="modal-window__form">
+        <span class="modal-window__close-btn" id="close-modal-button">&times;</span>
+        <h2>SEND US MESSAGE</h2>
+        
+        <div class="modal-window__label-input">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Your Name">
+          <span id="full-name-error-message"></span>
+        </div>
+        
+        <div class="modal-window__label-input">
+          <label for="email" class="form-label">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your Email">
+          <span id="email-error-message"></span>
+        </div>
+        
+        <div class="modal-window__label-input">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message"></textarea>
+          <span id="message-error-message"></span>
+        </div>
+        
+        <button type="submit" class="btn modal-window__form-btn">SUBMIT</button>
+      </form>
+    </div>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

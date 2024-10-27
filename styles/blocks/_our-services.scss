@@ -1,0 +1,128 @@
+.our-services {
+  padding: 180px 0 200px;
+
+  &__heading {
+    transform: translateX(-80px);
+  }
+
+  &__grid { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 100px;
+    justify-items: end;
+    align-items: start;
+    margin-left: 80px;
+  }
+
+  &__card {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px var(--shadow-color);
+    padding: 48px;
+    grid-row: span 2;
+    &:nth-child(1) {
+      grid-row: 2 / span 2;
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    span {
+      display: block;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 26px;
+      margin-bottom: 32px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 14px;
+      line-height: 30px;
+      text-decoration: none;
+      color: var(--main-color);
+      transition: color 0.1s ease;
+      &:hover {
+        color: var(--main-color-hovered);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__card-img-contaner {
+    height: 132px;
+    position: relative;
+    margin-bottom: 56px;
+  }
+  &__card-img {
+    position: absolute;
+    right: calc(50% - 130px / 2);
+    bottom: 0;
+    &_center {
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  
+}
+
+@media (max-width: 1199px) {
+  .our-services {
+    &__heading {
+      transform: translateX(-20px);
+    }
+    &__grid { 
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .our-services {
+    padding: 100px 0 120px;
+
+    &__heading {
+      transform: translateX(0);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &__grid { 
+      gap: 70px;
+      justify-items: center;
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 0;
+    }
+    &__card {
+      width: min(420px, 100%);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .our-services {
+    &__grid {
+      gap: 60px;
+    }
+    &__card-img-contaner {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .our-services {
+    padding: 80px 0 100px;
+    &__grid {
+      gap: 40px;
+    }
+  }
+}
